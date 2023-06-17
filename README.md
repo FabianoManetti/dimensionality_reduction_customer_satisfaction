@@ -10,7 +10,7 @@
 
 **This is part of the second training course of https://www.datascienceacademy.com.br/ Data Scientist program.**
 
-<center><img src="customer_satisfaction.jpg"></center><br>
+<center><img src="images/customer_satisfaction.jpg"></center><br>
 
 ## Problem Context
 
@@ -62,3 +62,25 @@ We made used again of the `Pipeline`, `RobustScaler` and  `SMOTE` methods and te
 
 At this part of the project, we tested different algorithms using the final set of features that we found in our fourth reduction step. Our goal was to improve or at least keep our current accuracy score.
 
+<center><img src="images/scores.png"></center><br>
+
+* We could see that the `KNN` model had the **highest scores** in both validation and testing set, followed by `Random Forest Classifier`.
+
+However, it is possible that the `KNN` was privileging the class that has more data to the detriment of balancing accuracy. For this reason, and according to the results obtained previously, we chose to proceed with the model `Random Forest Classifier`. In the follow, we tried to **optimize the hyperparameters** of the chosen model with the help of the `GridSearchCV` technique.
+
+## Final Considerations
+
+It is essential for a financial institution that customers **dissatisfied** with its services are quickly identified and preventive measures are taken to resolve this situation.
+
+This work is essentially relevant for established banks, where the competition with new digital players requires precise initiatives in order to **retain these customers**.
+
+This project involved a typical problem within Data Science, which is the ability to **reduce the dimensionality** of the dataset, since the creation of predictive models in this situation could lead to inaccuracies in results and a decrease in decision speed.
+
+At the end of the work, we were able to train a `Random Forest` prediction model with an average **accuracy of 83%**.
+
+In order to improve the model performance, the following strategies may be further studied:
+
+* Other techniques for dimensionality reduction, like PCA, could be studied;
+* The original testing dataset could be used somehow;
+* Other oversampling and undersampling techniques could be used;
+* More models or even a blend of models could be tested.

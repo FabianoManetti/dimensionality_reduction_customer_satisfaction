@@ -8,8 +8,6 @@
 </div>
 
 
-**This is part of the second training course of https://www.datascienceacademy.com.br/ Data Scientist program.**
-
 <center><img src="images/customer_satisfaction.jpg"></center><br>
 
 ## Problem Context
